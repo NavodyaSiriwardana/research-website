@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IDiary</title>
+  <meta name="description" content="Research project website – domain, milestones, documents, presentations and team." />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#home" class="brand" aria-label="Back to home">
+        <span class="brand-mark" id="brandMark">R</span>
+        <span id="brandName">Project</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#domain">Domain</a></li>
+        <li><a href="#milestones">Milestones</a></li>
+        <li><a href="#documents">Documents</a></li>
+        <li><a href="#presentations">Presentations</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search the site">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span class="search-label">Search</span><span class="kbd search-label">Ctrl K</span>
+        </button>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HOME ================= -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="reveal">
+          <div class="hero-meta" id="heroMeta"></div>
+          <h1>Welcome to <span id="heroName">Project</span></h1>
+          <p class="tagline" id="heroTagline"></p>
+          <p class="abstract" id="heroAbstract"></p>
+          <div class="hero-actions">
+            <a href="#domain" class="btn btn-primary">Explore Project →</a>
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+        <img class="hero-art reveal" id="heroImage" src="assets/images/hero.svg" alt="Project illustration" width="520" height="420" />
+      </div>
+    </section>
+
+    <section class="section alt" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">System Overview</span>
+          <h2>Key Components</h2>
+          <p>Four integrated components, each developed by a team member.</p>
+        </div>
+        <div class="grid g4" id="featureGrid"></div>
+        <div id="videoSlot"></div>
+      </div>
+    </section>
+
+    <!-- ================= DOMAIN ================= -->
+    <section class="section" id="domain">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Research Domain</span>
+          <h2>Project Domain</h2>
+          <p>Literature survey, research gap, problem, objectives, methodology and technologies.</p>
+        </div>
+        <div class="tabs" role="tablist" id="domainTabs">
+          <button class="tab active" data-tab="lit">Literature Survey</button>
+          <button class="tab" data-tab="gap">Research Gap</button>
+          <button class="tab" data-tab="prob">Research Problem</button>
+          <button class="tab" data-tab="obj">Objectives</button>
+          <button class="tab" data-tab="meth">Methodology</button>
+          <button class="tab" data-tab="tech">Technologies</button>
+        </div>
+        <div class="tab-panel active" id="tab-lit"></div>
+        <div class="tab-panel" id="tab-gap"></div>
+        <div class="tab-panel" id="tab-prob"></div>
+        <div class="tab-panel" id="tab-obj"></div>
+        <div class="tab-panel" id="tab-meth"></div>
+        <div class="tab-panel" id="tab-tech"></div>
+        <div class="refs" id="references"></div>
+      </div>
+    </section>
+
+    <!-- ================= MILESTONES ================= -->
+    <section class="section alt" id="milestones">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Assessments</span>
+          <h2>Milestones</h2>
+          <p>Select an assessment to view its details, date and marks allocated.</p>
+        </div>
+        <div class="ms-select-wrap">
+          <label for="msSelect">Choose a milestone</label>
+          <select id="msSelect"></select>
+        </div>
+        <div class="card ms-detail" id="msDetail"></div>
+        <div class="timeline" id="msTimeline"></div>
+      </div>
+    </section>
+
+    <!-- ================= DOCUMENTS ================= -->
+    <section class="section" id="documents">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Downloads</span>
+          <h2>Documents</h2>
+          <p>All documents produced so far, and those still pending.</p>
+        </div>
+        <div class="tabs" id="docTabs"></div>
+        <div class="grid g3" id="docGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= PRESENTATIONS ================= -->
+    <section class="section alt" id="presentations">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Slides</span>
+          <h2>Presentations</h2>
+          <p>Slides from past presentations. Upcoming ones will be added after each assessment.</p>
+        </div>
+        <div class="grid g4" id="slideGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Team</span>
+          <h2>About Us</h2>
+          <p>Meet the team and supervisors behind the project.</p>
+        </div>
+        <h3 class="sub-head">Supervisors</h3>
+        <div class="grid g2" id="supGrid" style="max-width:760px;margin:0 auto;"></div>
+        <h3 class="sub-head">Group Members</h3>
+        <div class="grid g4" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Get in Touch</span>
+          <h2>Contact Us</h2>
+          <p>Questions, feedback or collaboration ideas? We'd love to hear from you.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Contact Details</h3>
+            <div id="contactInfo"></div>
+            <h4 style="margin-top:24px;">General Email Template</h4>
+            <pre class="template" id="emailTemplate"></pre>
+            <button class="btn btn-outline btn-sm" id="copyTemplate">Copy template</button>
+          </div>
+          <div class="card">
+            <h3>Send us a Message</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="field"><label for="cfName">Name</label><input id="cfName" required /></div>
+                <div class="field"><label for="cfEmail">Email</label><input id="cfEmail" type="email" required /></div>
+              </div>
+              <div class="field"><label for="cfSubject">Subject</label><input id="cfSubject" required /></div>
+              <div class="field"><label for="cfMsg">Message</label><textarea id="cfMsg" required></textarea></div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="muted" style="font-size:.82rem;color:var(--muted);margin-top:10px;">Opens Gmail in a new tab with your message ready — just press Send.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="brand"><span class="brand-mark" id="footMark">R</span><span id="footName">Project</span></div>
+          <p id="footTagline"></p>
+          <p id="footInst" style="font-size:.88rem;"></p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul><li><a href="#home">Home</a></li><li><a href="#domain">Domain</a></li><li><a href="#milestones">Milestones</a></li><li><a href="#documents">Documents</a></li></ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul><li><a href="#presentations">Presentations</a></li><li><a href="#about">About Us</a></li><li><a href="#contact">Contact Us</a></li></ul>
+        </div>
+      </div>
+      <div class="foot-bottom" id="footBottom"></div>
+    </div>
+  </footer>
+
+  <!-- Search overlay -->
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-label="Search">
+    <div class="search-box">
+      <input id="searchInput" placeholder="Search sections, milestones, documents, members…" autocomplete="off" />
+      <ul class="search-results" id="searchResults"></ul>
+    </div>
+  </div>
+
+  <!-- Document reader (markdown) -->
+  <div class="reader-overlay" id="readerOverlay" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+    <div class="reader-box">
+      <div class="reader-head">
+        <h3 id="readerTitle"></h3>
+        <button type="button" class="reader-close" id="readerClose" aria-label="Close">✕</button>
+      </div>
+      <div class="reader-body md" id="readerBody"></div>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

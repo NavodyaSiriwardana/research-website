@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>IDiary</title><defs>
+<linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#21405f"/><stop offset="1" stop-color="#172e47"/></linearGradient>
+<linearGradient id="book" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#3ff0d0"/><stop offset="1" stop-color="#22c9ae"/></linearGradient></defs>
+<rect width="512" height="512" rx="116" fill="url(#tile)"/>
+<rect x="1.5" y="1.5" width="509" height="509" rx="114.5" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="3"/>
+<g fill="url(#book)">
+  <!-- left page -->
+  <path d="M132 186 C 170 170, 214 172, 246 192 L 246 334 C 214 316, 170 314, 132 326 Z"/>
+  <!-- right page -->
+  <path d="M266 192 C 298 172, 342 170, 380 186 L 380 326 C 342 314, 298 316, 266 334 Z"/>
+  <!-- cover / spine underneath -->
+  <path d="M120 334 C 170 322, 222 330, 256 352 C 290 330, 342 322, 392 334 L 392 352
+           C 342 340, 290 348, 256 370 C 222 348, 170 340, 120 352 Z"/>
+</g>
+<!-- page being turned -->
+<path d="M266 200 C 286 178, 310 162, 330 152 L 330 294 C 310 304, 286 322, 266 344 Z" fill="url(#book)" stroke="#1a3450" stroke-width="9" stroke-linejoin="round"/>
+</svg>
