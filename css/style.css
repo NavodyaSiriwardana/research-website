@@ -19,7 +19,7 @@
   --nav-h: 68px;
   --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
-@media (prefers-color-scheme: dark) {
+@media (@media all) {
   :root {
     --primary: #2dd4bf; --primary-dark: #14b8a6; --primary-soft: #134e4a;
     --ink: #f1f5f9; --text: #cbd5e1; --muted: #94a3b8; --line: #1e293b;
