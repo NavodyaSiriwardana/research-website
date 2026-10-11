@@ -8,7 +8,7 @@
 
 Final Year Research Project · Group **R26-IT-125** · Faculty of Computing · Sri Lanka Institute of Information Technology (SLIIT)
 
-🌐 **Live website:** [your-project.vercel.app](https://your-project.vercel.app) <!-- TODO: replace with your Vercel link -->
+🌐 **Live website:** [https://idiary-zeta.vercel.app]
 
 </div>
 
